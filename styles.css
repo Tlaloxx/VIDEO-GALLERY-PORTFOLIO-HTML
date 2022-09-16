@@ -1,0 +1,92 @@
+/* --------------background DE PRUEBA------------------ */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+
+/* -----------------AQUI COMIENZA EL NUEVO CODIGO------------------------ */
+
+.port-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    padding: 40px;
+    text-decoration: none;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-weight: 500;
+}
+
+header .header-content p {
+    color: #9b9b9b;
+}
+
+header .header-categories,
+a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    margin: 10px 20px;
+    text-shadow: 1rem;
+    font-weight: 800;
+}
+
+header .header-categories,
+a.active {
+    color: #9bf3d0;
+}
+
+/* ----------------IMAGENES DEL GRID------------- */
+
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s linear 1s;
+}
+
+.grid.images-load{
+    opacity: 1; 
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 1px;
+    width: calc(33.33% - 2px); 
+}
+
+.grid .item-content{
+    position: relative;
+}
+
+.grid .item video{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ---------------- HOVER DE VIDEO ------------------ */
+
+
+.grid .item video:hover{
+   
+}
+

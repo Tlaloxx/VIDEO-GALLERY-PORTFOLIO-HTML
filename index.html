@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div class="port-content">
+        <header>
+            <div class="header-content">
+                <h1>Heskil studio</h1><br>
+                <p>Estudio de animacion</p>
+            </div>
+            <div class="header-categories" id="header-categories">
+                <a class="active" href="#">All</a>
+                <a href="#">2D</a>
+                <a href="#">3D</a>
+                <a href="#">VFX</a>
+                <a href="#">Render</a>
+            </div>
+        </header>
+        <section class="grid" id="grid">
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="2d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+            <div class="item" data-categories="3d" data-description="loremp is a blablabla">
+                <div class="item-content">
+                    <video class="clip" src="assets/video/long/vfx/vfx-one-vid.mp4" type="video/mp4" loop></video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="portafolio.js"></script>
+    <script>
+        const clip = document.querySelectorAll('.clip');
+        for (let i = 0; i<clip.length; i++){
+            clip[i].addEventListener('mouseenter',function(e){clip[i].play()});
+            clip[i].addEventListener('mouseout', function(e){clip[i].pause()});
+        };
+    </script>
+
+</body>
+
+</html>
+

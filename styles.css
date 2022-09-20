@@ -48,6 +48,10 @@ a {
     font-weight: 800;
 }
 
+header .header-categories, a:hover{
+    transform: scale(1.35);
+}
+
 header .header-categories,
 a.active {
     color: #9bf3d0;
@@ -55,38 +59,34 @@ a.active {
 
 /* ----------------IMAGENES DEL GRID------------- */
 
-.grid{
+.grid {
     position: relative;
     width: 100%;
     opacity: 0;
     transition: 0.5s linear 1s;
 }
 
-.grid.images-load{
-    opacity: 1; 
+.grid.images-load {
+    opacity: 1;
 }
 
-.grid .item{
+.grid .item {
     position: absolute;
     display: block;
     padding: 0;
     margin: 1px;
-    width: calc(33.33% - 2px); 
+    width: calc(33.33% - 2px);
 }
 
-.grid .item-content{
+.grid .item-content {
     position: relative;
 }
 
-.grid .item video{
+.grid .item .item-content video {
     width: 100%;
     cursor: pointer;
 }
 
-/* ---------------- HOVER DE VIDEO ------------------ */
+/* ---------------- HOVER DE VIDEO EN GRID ------------------ */
 
-
-.grid .item video:hover{
-   
-}
 

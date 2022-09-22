@@ -87,6 +87,11 @@ a.active {
     cursor: pointer;
 }
 
-/* ---------------- HOVER DE VIDEO EN GRID ------------------ */
+/* ------------------------------------------------ */
+
+video {
+    background-color: gray;
+}
+
 
 

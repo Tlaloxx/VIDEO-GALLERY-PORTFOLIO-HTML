@@ -1,3 +1,3 @@
 # web-tech-portafolio
 
-## https://tlaloxx.github.io/web-portfolio-video/
+## https://tlaloxx.github.io/VIDEO-GALLERY-PORTFOLIO-HTML/
